@@ -3,8 +3,8 @@ import numpy as np
 import joblib
 
 # Load trained model and scaler
-model = joblib.load("heart.pkl")
-scaler = joblib.load("scaler.pkl")
+model = joblib.load("heart_model.pkl")
+scaler = joblib.load("scaler (1).pkl")
 
 # Page config
 st.set_page_config(
@@ -131,3 +131,4 @@ if st.button("🔍 Predict Heart Disease"):
         st.write("👉 Recommendation: Maintain a healthy lifestyle.")
 
 st.caption("Model: Random Forest | Deployed using Streamlit")
+
